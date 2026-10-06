@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Alex</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header and Navigation -->
+<header>
+<h1>Contact Me</h1>
+<nav>
+<ul>
+<li><a href="home.html">Home</a></li>
+<li><a href="about.html">About Me</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</nav>
+</header>
+
+<!-- Main Form Content -->
+<main>
+<section>
+<h2>Get in Touch</h2>
+<h3>Send me some feedback — I’d love to hear from you!</h3>
+
+<!-- MAILTO FORM -->
+<form action="mailto:alex.corradino@outlook.com" method="post" enctype="text/plain">
+
+<!-- Text Field -->
+<div>
+<label for="full-name">Full Name:</label>
+<input type="text" id="full-name" name="Full Name" placeholder="Enter your name" required>
+</div>
+
+<br>
+
+<!-- Dropdown -->
+<div>
+<label for="contact-method">Preferred Way to Contact You:</label>
+<select id="contact-method" name="Preferred Contact Method">
+<option value="email">Email</option>
+<option value="phone">Phone</option>
+<option value="social">Social Media</option>
+</select>
+</div>
+
+<br>
+
+<!-- Radio Buttons -->
+<fieldset>
+<legend>How did you find my site?</legend>
+
+<label for="friend">
+<input type="radio" id="friend" name="Found Site Through" value="Friend/Family"> Friend/Family
+</label>
+
+<label for="search">
+<input type="radio" id="search" name="Found Site Through" value="Search Engine"> Search Engine
+</label>
+
+<label for="other">
+<input type="radio" id="other" name="Found Site Through" value="Other"> Other
+</label>
+</fieldset>
+
+<br>
+
+<!-- Textarea -->
+<div>
+<label for="message">Your Message:</label><br>
+<textarea id="message" name="Message" rows="5" cols="30" placeholder="Type your message here..." required></textarea>
+</div>
+
+<br>
+
+<!-- Submit -->
+<button type="submit">Send Message</button>
+
+</form>
+</section>
+</main>
+
+<!-- Footer -->
+<footer>
+<p>&copy; 2026 Alex Corradino</p>
+</footer>
+
+</body>
+</html>
