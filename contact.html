@@ -1,91 +1,115 @@
 <!DOCTYPE html>
+<!-- Declares the document as HTML5 -->
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<!-- Sets the character encoding -->
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Makes the page responsive -->
 <title>Contact Alex</title>
+<!-- Title shown in the browser tab -->
 <link rel="stylesheet" href="style.css">
+<!-- Connects to the external CSS file -->
 </head>
+
 <body>
+<!-- Contains all visible content on the page -->
 
 <!-- Header and Navigation -->
 <header>
-<h1>Contact Me</h1>
-<nav>
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="about.html">About Me</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</nav>
-</header>
+  <h1>Contact Me</h1>
+  <!-- Main heading for the page -->
 
-<!-- Main Form Content -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <!-- Link to homepage -->
+      <li><a href="about.html">About Me</a></li>
+      <!-- Link to About page -->
+      <li><a href="contact.html">Contact</a></li>
+      <!-- Link to Contact page -->
+    </ul>
+  </nav>
+</header>
+<!-- Header provides navigation and page title -->
+
+<!-- Main Content -->
 <main>
 <section>
-<h2>Get in Touch</h2>
-<h3>Send me some feedback — I’d love to hear from you!</h3>
+  <h2>Get in Touch</h2>
+  <!-- Section heading for contact form -->
 
-<!-- MAILTO FORM -->
-<form action="mailto:alex.corradino@outlook.com" method="post" enctype="text/plain">
+  <h3>Send me some feedback — I’d love to hear from you!</h3>
+  <!-- Short description inviting the user to send a message -->
 
-<!-- Text Field -->
-<div>
-<label for="full-name">Full Name:</label>
-<input type="text" id="full-name" name="Full Name" placeholder="Enter your name" required>
-</div>
+  <!-- Contact Form -->
+  <form action="#" method="post">
+  <!-- Basic form setup using POST (no mailto) -->
 
-<br>
+    <!-- Name Input -->
+    <div>
+      <label for="full-name">Full Name:</label>
+      <input type="text" id="full-name" name="full-name" placeholder="Enter your name" required>
+    </div>
+    <!-- Collects the visitor's name -->
 
-<!-- Dropdown -->
-<div>
-<label for="contact-method">Preferred Way to Contact You:</label>
-<select id="contact-method" name="Preferred Contact Method">
-<option value="email">Email</option>
-<option value="phone">Phone</option>
-<option value="social">Social Media</option>
-</select>
-</div>
+    <br>
 
-<br>
+    <!-- Contact Method Dropdown -->
+    <div>
+      <label for="contact-method">Preferred Way to Contact You:</label>
+      <select id="contact-method" name="contact-method">
+        <option value="email">Email</option>
+        <option value="phone">Phone</option>
+        <option value="social">Social Media</option>
+      </select>
+    </div>
+    <!-- Lets the visitor choose how they prefer to be contacted -->
 
-<!-- Radio Buttons -->
-<fieldset>
-<legend>How did you find my site?</legend>
+    <br>
 
-<label for="friend">
-<input type="radio" id="friend" name="Found Site Through" value="Friend/Family"> Friend/Family
-</label>
+    <!-- Radio Buttons -->
+    <fieldset>
+      <legend>How did you find my site?</legend>
 
-<label for="search">
-<input type="radio" id="search" name="Found Site Through" value="Search Engine"> Search Engine
-</label>
+      <label for="friend">
+        <input type="radio" id="friend" name="source" value="friend"> Friend/Family
+      </label>
 
-<label for="other">
-<input type="radio" id="other" name="Found Site Through" value="Other"> Other
-</label>
-</fieldset>
+      <label for="search">
+        <input type="radio" id="search" name="source" value="search"> Search Engine
+      </label>
 
-<br>
+      <label for="other">
+        <input type="radio" id="other" name="source" value="other"> Other
+      </label>
+    </fieldset>
+    <!-- Lets the visitor choose how they discovered the website -->
 
-<!-- Textarea -->
-<div>
-<label for="message">Your Message:</label><br>
-<textarea id="message" name="Message" rows="5" cols="30" placeholder="Type your message here..." required></textarea>
-</div>
+    <br>
 
-<br>
+    <!-- Message Textarea -->
+    <div>
+      <label for="message">Your Message:</label><br>
+      <textarea id="message" name="message" rows="5" cols="30" placeholder="Type your message here..." required></textarea>
+    </div>
+    <!-- Allows the visitor to type a message -->
 
-<!-- Submit -->
-<button type="submit">Send Message</button>
+    <br>
 
-</form>
+    <!-- Submit Button -->
+    <button type="submit">Send Message</button>
+    <!-- Sends the form data (locally, since no mailto is used) -->
+
+  </form>
 </section>
 </main>
+<!-- Main area holds the contact form -->
 
 <!-- Footer -->
 <footer>
-<p>&copy; 2026 Alex Corradino</p>
+  <p>&copy; 2026 Alex Corradino</p>
+  <!-- Copyright -->
 </footer>
 
 </body>
