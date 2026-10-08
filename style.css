@@ -60,7 +60,13 @@ img {
   margin: 20px auto;
   border-radius: 10px;
 }
-
+/* Styles the embedded YouTube video */
+iframe {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
+  border-radius: 10px;
+}
 /* ===========================
    HEADINGS
    =========================== */
